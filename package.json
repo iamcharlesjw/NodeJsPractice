@@ -1,0 +1,26 @@
+{
+  "name": "nodejspractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamcharlesjw/NodeJsPractice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamcharlesjw/NodeJsPractice/issues"
+  },
+  "homepage": "https://github.com/iamcharlesjw/NodeJsPractice#readme",
+  "devDependencies": {
+    "karma-phantomjs-launcher": "^1.0.4",
+    "phantomjs-prebuilt": "^2.1.16"
+  },
+  "dependencies": {
+    "intl": "^1.2.5"
+  }
+}
