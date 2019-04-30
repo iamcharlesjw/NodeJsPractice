@@ -1,13 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { UserModule } from './user/user.module';
 import { MainModule } from './main/main.module';
+import { NavigationModule } from './navigation/navigation.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule, MatListModule, MatGridListModule } from '@angular/material';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -18,10 +20,9 @@ import { MatCardModule, MatListModule, MatGridListModule } from '@angular/materi
     AppRoutingModule,
     UserModule,
     MainModule,
-    MatCardModule,
-    MatListModule,
-    MatGridListModule,
-    BrowserAnimationsModule
+    NavigationModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
