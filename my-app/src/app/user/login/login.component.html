@@ -1,6 +1,21 @@
-<div class="example-container">
-  <mat-form-field>
-    <input matInput placeholder="Enter your email" [formControl]="email" required>
-    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-  </mat-form-field>
+<div class="my-auth-container">
+  <mat-card class="my-auth-form">
+    <mat-form-field>
+      <input matInput placeholder="Enter Your Username">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Enter your Password" [type]="hide ? 'password' : 'text'">
+      <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </mat-form-field>
+  </mat-card>
+  <mat-card class="my-auth-options">
+    <mat-grid-list cols="2" rowHeight="1:1">
+      <mat-grid-tile>
+        Want to make an account?
+      </mat-grid-tile>
+      <mat-grid-tile>
+        Forgot your password?
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card>
 </div>
