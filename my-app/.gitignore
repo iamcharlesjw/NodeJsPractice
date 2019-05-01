@@ -17,6 +17,7 @@ speed-measure-plugin.json
 .project
 .classpath
 .c9/
+.circleci
 *.launch
 .settings/
 *.sublime-workspace
