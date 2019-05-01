@@ -6,7 +6,7 @@ jobs:
       - image: circleci/node:8-browsers
     steps:
       - checkout :
-        path: ~/NodeJsPractice
+          path: ~/NodeJsPractice
       - restore_cache:
           key: my-app-{{ .Branch }}-{{ checksum "package-lock.json" }}
       - run: npm install
