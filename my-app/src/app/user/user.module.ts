@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule } from '../material/material.module';
@@ -29,6 +29,7 @@ const appRoutes: Routes = [
     MaterialModule
   ],
   declarations: [LoginComponent, ProfileComponent, DashboardComponent],
-  exports: [LoginComponent, ProfileComponent, CommonModule, MaterialModule]
+  exports: [LoginComponent, ProfileComponent, CommonModule, MaterialModule],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class UserModule { }

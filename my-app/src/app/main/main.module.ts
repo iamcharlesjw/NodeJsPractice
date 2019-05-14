@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,6 +15,7 @@ import { PagenotfoundComponent} from './pagenotfound/pagenotfound.component';
     MaterialModule
   ],
   declarations: [ HomeComponent, PagenotfoundComponent],
-  exports: [ HomeComponent,PagenotfoundComponent]
+  exports: [ HomeComponent,PagenotfoundComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class MainModule { }
