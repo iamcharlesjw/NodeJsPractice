@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PagenotfoundComponent } from './pagenotfound.component';
+// My Module 
+import { MaterialModule } from '../../material/material.module';
 
 describe('PagenotfoundComponent', () => {
   let component: PagenotfoundComponent;
@@ -8,7 +10,8 @@ describe('PagenotfoundComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PagenotfoundComponent ]
+      declarations: [ PagenotfoundComponent ],
+      imports: [MaterialModule]
     })
     .compileComponents();
   }));
